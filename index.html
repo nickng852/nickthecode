@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap v5.0 CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <!-- AOS CDN -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Font Awesome v5.15.1 CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image\png"
+      href="images\bio.png"
+      sizes="16x16 32x32"
+    />
+    <!-- Tab Title -->
+    <title>nickthecode</title>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <!-- Google Fonts -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+    </style>
+  </head>
+
+  <body>
+    <!-- Navigation Bar -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <a class="navbar-brand" href="\">nick ng</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="\">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="javascript:myscroll('about');"
+                  >About</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="javascript:myscroll('skill');"
+                  >Skills</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="javascript:myscroll('services');"
+                  >Services</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="javascript:myscroll('work');">Work</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="javascript:myscroll('contact');"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Navigation Bar End-->
+
+    <section
+      id="intro"
+      data-aos="fade"
+      data-aos-duration="2000"
+      data-aos-delay="3000"
+    >
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-md-6">
+            <h2>Hi!</h2>
+            <h1>I am Nick.</h1>
+            <p>A person who is passionate on learning new things.</p>
+            <button
+              type="button"
+              class="btn btn-dark mt-3"
+              onclick="javascript:myscroll('about');"
+            >
+              Get Started&nbsp;&nbsp;<i class="fas fa-angle-down"></i>
+            </button>
+          </div>
+          <div class="col-md-6">
+            <svg
+              class="float-end"
+              width="550"
+              height="550"
+              viewBox="0 0 1000 1000"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g id="intro_img">
+                <path
+                  id="star-upper"
+                  d="M633.395 119.508L636.555 125.908C636.745 126.296 637.026 126.631 637.374 126.886C637.723 127.14 638.128 127.306 638.555 127.368L645.625 128.368C646.119 128.438 646.584 128.646 646.966 128.968C647.348 129.289 647.632 129.712 647.786 130.186C647.94 130.661 647.958 131.17 647.838 131.655C647.718 132.139 647.464 132.58 647.105 132.928L641.995 137.928C641.685 138.229 641.452 138.601 641.318 139.012C641.184 139.424 641.152 139.861 641.225 140.288L642.425 147.288C642.51 147.779 642.456 148.283 642.269 148.745C642.082 149.207 641.769 149.607 641.367 149.9C640.964 150.194 640.487 150.369 639.991 150.405C639.494 150.442 638.997 150.339 638.555 150.108L632.225 146.788C631.843 146.585 631.417 146.48 630.985 146.48C630.553 146.48 630.127 146.585 629.745 146.788L623.415 150.108C622.974 150.342 622.475 150.447 621.977 150.412C621.478 150.376 621 150.202 620.595 149.908C620.191 149.614 619.877 149.213 619.69 148.75C619.503 148.287 619.449 147.78 619.535 147.288L620.745 140.288C620.818 139.861 620.787 139.424 620.652 139.012C620.518 138.601 620.286 138.229 619.975 137.928L614.865 132.928C614.507 132.58 614.253 132.139 614.132 131.655C614.012 131.17 614.03 130.661 614.184 130.186C614.338 129.712 614.622 129.289 615.004 128.968C615.386 128.646 615.851 128.438 616.345 128.368L623.415 127.368C623.842 127.306 624.248 127.14 624.596 126.886C624.945 126.631 625.226 126.296 625.415 125.908L628.575 119.508C628.795 119.056 629.138 118.675 629.564 118.408C629.99 118.141 630.483 118 630.985 118C631.488 118 631.98 118.141 632.407 118.408C632.833 118.675 633.175 119.056 633.395 119.508V119.508Z"
+                  fill="#FEC272"
+                />
+                <path
+                  id="star-lower"
+                  d="M295.075 796.798L297.725 802.168C297.883 802.494 298.119 802.776 298.412 802.988C298.705 803.201 299.046 803.338 299.405 803.388L305.335 804.248C305.749 804.308 306.137 804.483 306.456 804.752C306.775 805.022 307.013 805.375 307.142 805.773C307.271 806.17 307.286 806.595 307.186 807.001C307.086 807.407 306.874 807.776 306.575 808.068L302.285 812.248C302.022 812.502 301.825 812.818 301.714 813.167C301.602 813.516 301.579 813.887 301.645 814.248L302.645 820.148C302.714 820.559 302.667 820.982 302.509 821.368C302.351 821.755 302.089 822.09 301.752 822.336C301.414 822.582 301.015 822.729 300.599 822.761C300.183 822.793 299.766 822.709 299.395 822.518L294.095 819.728C293.774 819.56 293.417 819.473 293.055 819.473C292.693 819.473 292.336 819.56 292.015 819.728L286.735 822.498C286.365 822.693 285.947 822.78 285.529 822.75C285.111 822.72 284.71 822.573 284.372 822.326C284.033 822.079 283.771 821.742 283.614 821.354C283.457 820.965 283.413 820.54 283.485 820.128L284.485 814.228C284.547 813.867 284.52 813.496 284.407 813.148C284.294 812.799 284.098 812.483 283.835 812.228L279.555 808.048C279.256 807.756 279.045 807.387 278.945 806.981C278.844 806.575 278.86 806.15 278.989 805.753C279.118 805.355 279.355 805.002 279.674 804.732C279.994 804.463 280.382 804.288 280.795 804.228L286.715 803.368C287.075 803.317 287.417 803.18 287.712 802.967C288.006 802.755 288.244 802.473 288.405 802.148L291.055 796.778C291.242 796.403 291.53 796.088 291.886 795.869C292.242 795.65 292.653 795.534 293.071 795.536C293.49 795.538 293.899 795.658 294.254 795.881C294.608 796.104 294.892 796.421 295.075 796.798V796.798Z"
+                  fill="#FEC272"
+                />
+                <g id="astronaut">
+                  <path
+                    id="Vector"
+                    d="M266.815 341.698C266.815 341.698 232.815 355.148 227.815 387.818C222.815 420.488 300.075 516.188 300.075 516.188L538.335 387.798L463.005 255.598L266.815 341.698Z"
+                    fill="#C7DCF9"
+                  />
+                  <path
+                    id="Vector_2"
+                    d="M319.495 372.578C319.495 372.578 294.425 398.318 286.735 426.798C279.045 455.278 278.055 506.138 279.335 525.188C316.735 559.798 464.565 530.798 464.565 530.798L607.025 363.218C607.025 363.218 582.875 317.368 570.615 304.798C558.355 292.228 518.615 276.598 472.765 295.048C445.855 333.238 319.495 372.578 319.495 372.578Z"
+                    fill="#E1ECFF"
+                  />
+                  <g id="Vector_3" style="mix-blend-mode: multiply">
+                    <path
+                      d="M308.305 385.888C308.305 385.888 363.615 403.638 425.875 379.588C488.135 355.538 499.415 287.798 499.415 287.798L472.735 295.058L319.495 372.578L308.305 385.888Z"
+                      fill="#E1ECFF"
+                    />
+                  </g>
+                  <path
+                    id="Vector_4"
+                    d="M533.465 593.678C533.465 593.678 603.395 594.128 623.045 599.148C642.695 604.168 694.705 721.878 716.225 733.148C737.745 744.418 756.025 725.698 779.735 711.798C803.445 697.898 825.175 681.078 825.855 674.058C826.535 667.038 816.465 638.988 807.755 633.328C799.045 627.668 773.755 627.268 760.265 635.908C740.445 581.908 712.265 503.158 686.425 492.318C660.585 481.478 582.275 476.318 582.275 476.318L533.465 593.678Z"
+                    fill="#E1ECFF"
+                  />
+                  <g id="Group">
+                    <g
+                      id="Vector_5"
+                      style="mix-blend-mode: multiply"
+                      opacity="0.51"
+                    >
+                      <path
+                        d="M607.025 542.138C607.025 542.138 663.965 548.368 679.695 569.558C695.425 590.748 726.595 720.408 761.485 723.478C762.045 765.478 689.785 780.648 689.785 780.648L516.575 588.188L607.025 542.138Z"
+                        fill="#E1ECFF"
+                      />
+                    </g>
+                  </g>
+                  <path
+                    id="Vector_6"
+                    d="M345.585 583.058C345.585 583.058 388.585 673.248 427.585 697.848C466.585 722.448 537.245 720.458 556.735 736.568C576.225 752.678 572.105 830.068 591.585 850.568C611.065 871.068 638.475 883.628 664.095 881.318C689.715 879.008 710.215 866.718 710.475 855.188C710.735 843.658 709.705 833.658 697.665 827.508C685.625 821.358 668.665 816.238 667.935 809.068C667.205 801.898 653.585 692.738 647.935 663.068C642.285 633.398 598.405 592.128 541.855 571.338C488.305 526.498 406.055 545.708 406.055 545.708L345.585 583.058Z"
+                    fill="#E1ECFF"
+                  />
+                  <g id="Vector_7" style="mix-blend-mode: multiply">
+                    <path
+                      d="M358.095 607.188C358.095 607.188 407.445 609.708 451.765 590.238C443.295 545.138 417.165 531.818 417.165 531.818L345.585 583.058L358.095 607.188Z"
+                      fill="#E1ECFF"
+                    />
+                  </g>
+                  <path
+                    id="Vector_8"
+                    d="M426.385 136.198C387.735 115.508 306.735 108.528 256.735 170.538C206.735 232.548 231.655 296.858 252.665 326.798C274.665 358.218 350.285 406.238 430.995 361.138C511.705 316.038 520.165 186.418 426.385 136.198Z"
+                    fill="#E1ECFF"
+                  />
+                  <path
+                    id="Vector_9"
+                    d="M419.735 174.118C454.065 182.318 476.365 230.488 464.835 276.608C453.305 322.728 413.585 353.738 369.005 353.988C324.425 354.238 280.095 323.798 280.335 266.878C280.575 212.178 345.185 156.318 419.735 174.118Z"
+                    fill="#1C3177"
+                  />
+                  <g id="Vector_10" style="mix-blend-mode: multiply">
+                    <path
+                      d="M320.825 534.378C365.555 513.618 332.095 466.218 376.685 455.438C435.475 463.798 451.735 460.798 451.735 460.798C451.735 460.798 339.265 559.578 320.825 534.378Z"
+                      fill="#E1ECFF"
+                    />
+                  </g>
+                  <path
+                    id="Vector_11"
+                    d="M358.095 407.598L432.535 599.148L537.845 596.648L634.185 535.658L662.885 448.548L593.185 239.458L559.365 337.338L471.735 407.038L358.095 407.598Z"
+                    fill="#FF97C9"
+                  />
+                  <path
+                    id="Vector_12"
+                    d="M320.825 534.378C345.505 532.378 358.075 516.308 365.555 509.178C369.365 505.538 368.605 502.348 366.685 491.848C364.765 481.348 371.425 470.578 380.525 465.968C385.525 479.418 391.665 481.968 396.405 481.338C401.145 480.708 406.015 452.388 421.515 452.638C437.015 452.888 449.445 473.398 451.515 483.638C453.585 493.878 443.575 523.088 431.015 543.588C418.455 564.088 400.735 589.468 360.845 597.408C320.955 605.348 298.275 584.978 285.205 559.228C280.795 550.538 279.205 538.528 279.345 525.148C279.345 525.148 288.275 536.938 320.825 534.378Z"
+                    fill="#E1ECFF"
+                  />
+                  <path
+                    id="Vector_13"
+                    d="M617.195 311.468C617.195 311.468 621.945 326.918 618.745 332.938C615.545 338.958 611.185 343.938 607.985 351.648C604.785 359.358 609.525 388.418 623.615 393.408C637.705 398.398 649.365 385.338 653.085 377.778C656.805 370.218 654.745 350.368 649.235 336.528C643.725 322.688 633.365 310.388 617.195 311.468Z"
+                    fill="#E1ECFF"
+                  />
+                  <g
+                    id="Vector_14"
+                    style="mix-blend-mode: soft-light"
+                    opacity="0.48"
+                  >
+                    <path
+                      d="M389.769 231.616C414.379 226.192 432.774 214.738 430.855 206.033C428.936 197.328 407.43 194.668 382.82 200.093C358.21 205.517 339.815 216.971 341.734 225.676C343.653 234.381 365.159 237.04 389.769 231.616Z"
+                      fill="white"
+                    />
+                  </g>
+                  <g id="Vector_15" style="mix-blend-mode: multiply">
+                    <path
+                      d="M445.815 512.358C445.815 512.358 417.505 487.058 412.375 487.058C407.245 487.058 393.585 507.058 396.665 512.358C399.745 517.658 415.565 535.018 432.935 540.358C438.565 529.618 445.815 512.358 445.815 512.358Z"
+                      fill="#E1ECFF"
+                    />
+                  </g>
+                  <g
+                    id="Vector_16"
+                    style="mix-blend-mode: multiply"
+                    opacity="0.5"
+                  >
+                    <path
+                      d="M471.735 407.038L537.845 596.648L634.185 535.658L559.365 337.338L471.735 407.038Z"
+                      fill="#FF97C9"
+                    />
+                  </g>
+                  <g id="Vector_17" style="mix-blend-mode: multiply">
+                    <path
+                      d="M653.605 699.288C643.697 707.497 632.561 714.101 620.605 718.858C609.395 723.178 605.605 732.018 608.995 748.238C612.385 764.458 614.285 789.748 621.285 796.408C628.285 803.068 652.365 799.528 664.845 784.048C660.935 753.548 653.605 699.288 653.605 699.288Z"
+                      fill="#E1ECFF"
+                    />
+                  </g>
+                  <g id="Vector_18" style="mix-blend-mode: multiply">
+                    <path
+                      d="M718.855 533.918C718.855 533.918 704.855 540.018 706.185 549.748C707.515 559.478 721.815 606.508 727.455 610.748C733.095 614.988 749.785 607.468 749.785 607.468C732.645 558.908 718.855 533.918 718.855 533.918Z"
+                      fill="#E1ECFF"
+                    />
+                  </g>
+                </g>
+                <path
+                  id="srock-md"
+                  d="M854.795 308.728C850.185 315.298 847.115 334.008 856.845 337.338C866.575 340.668 873.935 321.418 870.515 311.398C867.095 301.378 857.875 304.338 854.795 308.728Z"
+                  fill="#99ADF9"
+                />
+                <path
+                  id="srock-up"
+                  opacity="0.44"
+                  d="M861.795 156.898C854.535 160.318 842.565 175.018 849.365 182.748C856.165 190.478 872.095 177.418 874.105 167.028C876.115 156.638 866.645 154.618 861.795 156.898Z"
+                  fill="#99ADF9"
+                />
+                <path
+                  id="srock-bt"
+                  opacity="0.44"
+                  d="M179.115 743.568C172.835 738.568 154.365 734.318 150.425 743.828C146.485 753.338 165.245 761.828 175.425 759.088C185.605 756.348 183.295 746.908 179.115 743.568Z"
+                  fill="#99ADF9"
+                />
+                <g id="rock-lower">
+                  <path
+                    id="Vector_19"
+                    d="M128.055 646.458C116.925 623.378 153.195 598.678 184.055 600.458C214.915 602.238 227.885 630.728 238.815 641.358C261.645 663.538 260.925 685.238 245.115 694.568C229.305 703.898 142.785 676.988 128.055 646.458Z"
+                    fill="#99ADF9"
+                  />
+                  <g
+                    id="Vector_20"
+                    style="mix-blend-mode: multiply"
+                    opacity="0.64"
+                  >
+                    <path
+                      d="M233.345 635.028C222.175 637.128 223.975 647.118 227.555 656.168C231.135 665.218 243.735 667.798 252.625 659.528C246.855 645.798 233.345 635.028 233.345 635.028Z"
+                      fill="#99ADF9"
+                    />
+                  </g>
+                  <g
+                    id="Vector_21"
+                    style="mix-blend-mode: multiply"
+                    opacity="0.64"
+                  >
+                    <path
+                      d="M169.135 619.958C161.135 620.848 154.615 632.428 160.255 641.818C165.895 651.208 176.645 658.048 182.795 655.488C188.945 652.928 189.975 639.088 185.535 630.208C181.095 621.328 176.825 619.098 169.135 619.958Z"
+                      fill="#99ADF9"
+                    />
+                  </g>
+                </g>
+                <g id="rock-upper">
+                  <path
+                    id="Vector_22"
+                    d="M750.615 288.908C741.615 281.028 750.875 243.988 772.135 235.318C793.395 226.648 819.795 236.128 825.435 250.988C831.075 265.848 769.065 305.048 750.615 288.908Z"
+                    fill="#99ADF9"
+                  />
+                  <g
+                    id="Vector_23"
+                    style="mix-blend-mode: multiply"
+                    opacity="0.64"
+                  >
+                    <path
+                      d="M800.475 243.298C796.085 244.698 791.635 249.448 792.025 254.578C792.415 259.708 796.895 264.188 801.755 263.578C806.615 262.968 810.755 255.118 809.755 249.478C808.755 243.838 803.825 242.238 800.475 243.298Z"
+                      fill="#99ADF9"
+                    />
+                  </g>
+                  <g
+                    id="Vector_24"
+                    style="mix-blend-mode: multiply"
+                    opacity="0.64"
+                  >
+                    <path
+                      d="M753.985 253.298C753.985 253.298 759.985 259.298 758.985 266.108C757.985 272.918 747.645 272.288 747.645 272.288C747.645 272.288 749.185 260.678 753.985 253.298Z"
+                      fill="#99ADF9"
+                    />
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" data-aos="fade" data-aos-duration="2000">
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-md-6 text-end"
+            data-aos="fade-right"
+            data-aos-duration="2000"
+          >
+            <div class="about-info">
+              <span>About Me</span>
+              <h2>Who am I?</h2>
+              <p>Get to know me more here.</p>
+            </div>
+          </div>
+          <div
+            class="col-md-6 float-start"
+            data-aos="zoom-out-left"
+            data-aos-duration="2000"
+            data-aos-delay="1500"
+          >
+            <div class="ip_home">
+              <div class="header">
+                <h1>Welcome!</h1>
+                <p id="today"></p>
+              </div>
+              <button type="button" class="nextpg">Start exploring</button>
+              <div class="border"></div>
+              <div class="ip_scd">
+                <div class="top-content">
+                  <div class="top-image">
+                    <div class="header">
+                      <div class="return col-md-2">
+                        <i class="fas fa-angle-left"></i>
+                      </div>
+                      <div class="header-text col-md-8 text-center">
+                        Profile
+                      </div>
+                    </div>
+                    <div class="profile">
+                      <div class="icon">
+                        <img src="images/Memoji.png" />
+                      </div>
+                      <h1>Nick Ng</h1>
+                    </div>
+                  </div>
+                </div>
+                <div class="bio_text">
+                  <span>About Me</span>
+                  <p>
+                    Well-organised person with high attention to details. Fan of
+                    Netflix and outdoor activites like biking.
+                  </p>
+                  <p>
+                    Interested in frontend web development spectrum, and want to
+                    build a stunning website from scratch.
+                  </p>
+                  <p>
+                    Develop a diverse set of skills is one of my targets in the
+                    upcoming future.
+                  </p>
+                </div>
+                <div class="edbg_text">
+                  <span>Qualifications</span>
+                  <h2>OUHK (2015-2019)</h2>
+                  <p>BBA with Honours in Business Management</p>
+                  <span>Academic Acheivement</span>
+                  <h2>
+                    HKSAR Government Self-Financing Post-Secondary Scholarship
+                    Scheme 2016/17
+                  </h2>
+                  <p>Outstanding Performance Scholarship</p>
+                </div>
+                <div class="exp_text">
+                  <span>Current Job Position</span>
+                  <h2>HKBU (Sep 2019 to present)</h2>
+                  <p>Department of Sports, Physical Education</p>
+                  <ul class="exp_table">
+                    <li>providing administrative and clerical support;</li>
+                    <li>liaising with departments, students and vendors;</li>
+                    <li>managing sports centre website with WordPress;</li>
+                    <li>develop online surveys using Qualtrics;</li>
+                  </ul>
+                </div>
+                <div class="menu row">
+                  <div class="col-4 text-center icon-active" id="s1">
+                    <i class="fas fa-user-circle"></i>
+                  </div>
+                  <div class="col-4 text-center" id="s2">
+                    <i class="fas fa-graduation-cap"></i>
+                  </div>
+                  <div class="col-4 text-center" id="s3">
+                    <i class="fas fa-briefcase"></i>
+                  </div>
+                </div>
+                <div class="border"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="banner">
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <div
+            class="col-lg-6 text-center"
+            data-aos="fade-right"
+            data-aos-duration="2000"
+          >
+            <p>Graduated from</p>
+            <img src="images/ouhk.png" class="mt-4" id="ouhk" />
+          </div>
+          <div
+            class="col-lg-6 text-center"
+            data-aos="fade-left"
+            data-aos-duration="2000"
+          >
+            <p>Currently work at</p>
+            <img src="images/hkbu.png" class="mt-4" id="hkbu" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skill">
+      <div class="container">
+        <div data-aos="fade" data-aos-duration="1000">
+          <div class="skill_heading text-center">
+            <span>Skills</span>
+            <h2>that I equipped</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col" data-aos="fade" data-aos-duration="1000">
+            <div class="skill_box">
+              <div
+                id="HTML"
+                data-aos="fade-right"
+                data-aos-duration="2000"
+                data-aos-delay="500"
+              >
+                <span>HTML</span>
+                <div class="progress">
+                  <div class="progress-done">90%</div>
+                </div>
+              </div>
+              <div
+                id="CSS"
+                data-aos="fade-left"
+                data-aos-duration="2000"
+                data-aos-delay="750"
+              >
+                <span>CSS</span>
+                <div class="progress">
+                  <div class="progress-done">85%</div>
+                </div>
+              </div>
+              <div
+                id="JavaScript"
+                data-aos="fade-right"
+                data-aos-duration="2000"
+                data-aos-delay="1000"
+              >
+                <span>Javascript</span>
+                <div class="progress">
+                  <div class="progress-done">70%</div>
+                </div>
+              </div>
+              <div
+                id="BootStrap"
+                data-aos="fade-left"
+                data-aos-duration="2000"
+                data-aos-delay="1250"
+              >
+                <span>Bootstrap</span>
+                <div class="progress">
+                  <div class="progress-done">85%</div>
+                </div>
+              </div>
+              <div
+                id="jQuery"
+                data-aos="fade-right"
+                data-aos-duration="2000"
+                data-aos-delay="1500"
+              >
+                <span>jQuery</span>
+                <div class="progress">
+                  <div class="progress-done">75%</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="container">
+        <div
+          class="services_heading text-center"
+          data-aos="fade"
+          data-aos-duration="1000"
+        >
+          <span>Services</span>
+          <h2>What I can do</h2>
+        </div>
+        <div class="row">
+          <div
+            class="col-xl-4"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            data-aos-delay="500"
+          >
+            <div class="card text-center">
+              <img
+                class="card-img-top"
+                src="images/undraw_code_inspection_bdl7.svg"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Responsive Web Development</h5>
+                <p class="card-text">
+                  Build website with different web languages. Responsive in
+                  different devices, look nice and comfy.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-xl-4"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            data-aos-delay="1000"
+          >
+            <div class="card text-center">
+              <img
+                class="card-img-top"
+                src="images/undraw_Post_re_mtr4.svg"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h5 class="card-title">WP Development</h5>
+                <p class="card-text">
+                  Set up website with Content Management System(CMS) -
+                  WordPress. Including deploy theme builder, plugins and SEO
+                  etc.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-xl-4"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            data-aos-delay="1500"
+          >
+            <div class="card text-center">
+              <img
+                class="card-img-top"
+                src="images/undraw_image_viewer_wxce.svg"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Image and Video Processing</h5>
+                <p class="card-text">
+                  Modifying visual elements that will be used on a website with
+                  Adobe Photoshop and Premiere Pro.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="work">
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-md-6"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            data-aos-delay="300"
+          >
+            <img src="images/Responsive.png" />
+          </div>
+          <div
+            class="col-md-6"
+            data-aos="fade-down"
+            data-aos-duration="2000"
+            data-aos-delay="600"
+          >
+            <span>My Work</span>
+            <h2>Blog Site created with WordPress | tiro-place</h2>
+            <p>
+              This is a blog website which provides different kinds of articles.
+              And I will share what I have come across during my learning
+              process of IT, step by step with detailed instructions.
+            </p>
+            <button
+              type="button"
+              class="btn mt-3"
+              onclick="window.open('https://tiro-place.com/', '_blank')"
+            >
+              Discover&nbsp;<i class="fas fa-map-marker-alt"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="row" data-aos="zoom-in" data-aos-duration="2000">
+          <div class="col text-center">
+            <span>Contact</span>
+            <h2>Get In Touch!</h2>
+          </div>
+        </div>
+        <div
+          class="contact_form"
+          data-aos="zoom-out"
+          data-aos-duration="2500"
+          data-aos-delay="1100"
+        >
+          <!-- modify this form HTML and place wherever you want your form -->
+          <div class="col-md-7 col_left">
+            <form action="https://formspree.io/f/xaylaboj" method="POST">
+              <div class="row">
+                <span>Contact Me</span>
+                <div class="col-md-6">
+                  <label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="name"
+                      placeholder="Name"
+                    />
+                  </label>
+                </div>
+                <div class="col-md-6">
+                  <label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="from"
+                      placeholder="Email"
+                    />
+                  </label>
+                </div>
+              </div>
+              <label>
+                <textarea
+                  name="message"
+                  class="form-control"
+                  placeholder="Message..."
+                ></textarea>
+              </label>
+              <!-- your other form fields go here -->
+              <button type="submit">
+                Send&nbsp;<i class="fas fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+          <div class="col-md-5 col_right">
+            <span>Reach Me</span>
+            <table>
+              <tr>
+                <td><i class="far fa-envelope"></i></td>
+                <td>
+                  <a href="mailto:nickng852@gmail.com">nickng852@gmail.com</a>
+                </td>
+              </tr>
+              <tr>
+                <td>&nbsp;<i class="fas fa-mobile-alt"></i></td>
+                <td>+852 6238 4088</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="credit">
+      <div>
+        <p>© nickthecode.com | All rights reserved.</p>
+      </div>
+    </section>
+
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bootstrap v5.0 CDN -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
+    <!-- AOS CDN -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- GSAP v3.5.1 CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
